@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: rgb(66, 55, 55);
+        }
+
+        .box1 {
+            color: blue;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid maroon;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 5px;
+            /*here this is maximum */
+            border: 2px solid aqua;
+            /*only height means that the size of box will be 200px excluding border and margin*/
+            height: 200px;
+            /* the below line means that the total size including padding and margin of box will be of 200px*/ 
+            box-sizing: border-box;
+            /*margin collapse means if there are margin between two paragraphs then margin will take place of maximum margin value */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        This is first box
+    </div>
+    <div class="box box2">
+        This is another box
+    </div>
+</body>
+
+</html>

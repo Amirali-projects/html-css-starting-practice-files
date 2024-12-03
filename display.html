@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+</head>
+<style>
+    .box{
+        border:2px solid red;
+        width:455px;
+        /* width and top margin and padding  will apply only when we  will write display:inline-block */
+        display:inline;
+        padding:45px;
+        margin:34px;
+    }
+    .box1{
+        /* By the following the box will only hidden but its space will remain */
+        /* visibility:hidden; */
+        /* By the  following the space will also  diminish */
+        /* display:none; */
+
+    }
+</style>
+<body>
+    <div class=" box1 box">
+        This is first box
+    </div>
+    <div class=" box2  box">
+        This is second box
+    </div>
+</body>
+</html>

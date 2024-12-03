@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element selector */
+        div {
+            color: red;
+            /* Class selector */
+        }
+
+        .Amir {
+            color: aqua;
+        }
+
+        /* Id selector */
+        #Ali {
+            background-color: aqua;
+        }
+
+        /* Child selector */
+        span>p {
+            background-color: blueviolet;
+        }
+
+        /* universal selecter */
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        a:link{
+          color:green;
+          background-color:black;
+        }
+        a:active{
+            /* When we click then background color will be red */
+            background-color: red;
+        }
+        a:hover{
+            /* When we go on link then the color will be yellow */
+            background-color:yellow;
+        }
+        article:first-child{
+            /* By this first child color will be rgb */
+        background-color: rgb(119, 180, 155);
+        }
+
+    </style>
+</head>
+
+<body>
+    <pre>
+        <article>This is my starting of</article>
+        <article>html</article> 
+    </pre>
+    <div>
+        This is my first paragraph
+    </div>
+    <span class="Amir">
+        This is my second paragraph
+        <p>This is my fifth paragraph</p>
+    </span>
+    <article id="Ali">
+        This is my third paragraph
+    </article>
+    <a href="http://www.google.com">Go to Google</a>
+</body>
+
+</html>

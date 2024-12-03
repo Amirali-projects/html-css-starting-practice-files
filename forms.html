@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and inputs</title>
+</head>
+
+<body>
+    <h1>
+        The form of following job is here
+    </h1>
+    <form action="Amir.php">
+        <div>
+            Name: <input type="text">
+        </div>
+        <div>
+            Role: <input type="text">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email">
+        </div>
+        <div>
+            <!-- As both have same name so we can select only one  -->
+            Female: <input type="radio" name="mygender">male<input type="radio" name=mygender>other:<input type="radio"
+                name="mygender">
+        </div>
+        <div>
+            Number: <input type="number">
+        </div>
+
+        <div>
+            <!-- If we write checked then it will be already checked -->
+            Are you eligible: <input type="checkbox" name="My eligibility" checked>
+        </div>
+        <div>
+            <!-- If we write checked then it will be already checked -->
+            Date: <input type="date" name="Date>
+        </div>
+
+        <div>
+            <!-- If we write checked then it will be already checked -->
+       Submit: <input type=" submit" name="My submission" checked>
+        </div>
+        <div>
+            <!-- If we write checked then it will be already checked -->
+            Write about you here<br><textarea name="my text" rows="20" cols="30"></textarea>
+        </div>
+        <div>
+            <!-- If we write checked then it will be already checked -->
+            Reset now: <input type="reset" name="My submission">
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

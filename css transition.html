@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:245px;
+            width:256px;
+            background:rgb(36, 221, 30);
+        }
+        .box{
+            height:45px;
+            width:176px;
+            background:rgb(241, 241, 245);
+            transition-property:all;
+            /*we can also write as  transition-property: transform background-color; */
+            /* transition-duration: 10s;
+            transition-timing-function: cubic-bezier(0, 0.56, 0.08, 1.04);
+            transition-delay:2s; */
+            /* The  following is short  hand property of above 3 tags */
+            transition:10s cubic-bezier(0, 0.56, 0.08, 1.04) 2s;
+        }
+        .translate{
+               transform:translatex(34px)translatey(45px);
+               background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">My name  is Amir  Ali</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor navbar</title>
+    <style>
+        :root{
+            --defcolor:rgb(126, 72, 173);
+            --defpad:20px;
+            --defmargin:22px;
+            --defcolo:rgb(52, 16, 216);
+        }
+       li{
+        list-style:none;
+        color:var(--defcolo)
+        }
+        ul li{
+            display:inline-block;
+            padding:var(--defpad);
+            margin:var(--defmargin);
+            background-color:var(--defcolor);
+        }
+        .box{
+            background-color:var(--defcolo);
+        }
+         ul li:first-child{
+            --efcolor:rgb(131, 7, 7);
+            background-color:var(--efcolor);
+        }
+        ul li:last-child{
+        --efcolor:black;
+        background-color: var(--efcolor);
+        }
+        div ul li a{
+            color:white;
+            background-color: rgb(87, 105, 105);
+            text-decoration:none;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="box">
+    <ul>
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+        <li><a>Services</a></li>
+    </ul>
+   </div>
+</body>
+</html>

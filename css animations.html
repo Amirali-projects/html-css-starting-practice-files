@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is about animation">
+    <title>Document</title>
+    <style>
+        .container{
+            height:245px;
+            width:156px;
+            background-color:aqua;
+        }
+        .box{
+            width:34px;
+            height:45px;
+            background-color: maroon;
+            animation:Amirkaanimation;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode:both;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            animation-delay: 1s;
+        }
+        @keyframes  Amirkaanimation{
+            from{
+                   transform: translatex(0);
+            }
+            to{
+                transform: translatex(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

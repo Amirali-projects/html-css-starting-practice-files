@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media curies in css</title>
+    <style>
+        body{
+            background-color: rgb(9, 204, 42);
+        }
+            /* media cury can be all,speech instead of screen */
+            @media only screen and  (max-width:455px){
+                /* By writing this when width is less than 455 then blue colour occurs */
+            body {
+                background-color: blue;
+            }
+            /* By writing this when width is less than 455 then  boxes are in  coloumn */
+            .boxes{
+                flex-direction:column;
+            }
+           
+        }
+    
+        .boxes{
+            display:flex;
+            
+        }
+        .box{
+         border:2px solid red;
+         background-color:maroon;
+         width:240px;
+         height:100px;
+         padding:3px;
+         margin:3px;
+        }
+        /* In portrait When height is greater than width then a border occurs */
+        /* In landscape when width is greater than height  then  a border occurs */
+        @media screen and (orientation:landscape){
+        body{
+            border:2px solid black;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        This is my first paragraph in html
+    </div>
+    <div class="boxes">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</div>
+</body>
+
+</html>

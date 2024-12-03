@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in grid</title>
+    <style>
+        .container{
+            height:45px;
+            width:98px;
+           display:grid;
+           grid-template-columns:44px 45px 42px;
+           grid-template-rows:44px 45px 42px;
+           grid-row-gap:44px;
+            grid-column-gap:45px;
+        }
+
+
+
+.items{
+            border:2px solid  black;
+          
+        }
+        .items1{
+            background:red;
+            grid-row-start: 2;
+            grid-row-end:3;
+            grid-column-start:3;
+            grid-column-end:4;
+            
+        }
+        .items2{
+            background:rgb(152, 202, 16);
+        }
+        .items3{
+            background:rgb(23, 155, 73);
+        }
+        .items4{
+            background:rgb(212, 160, 160);
+        }
+        .items5{
+            background-color:rgb(197, 119, 241)
+        }
+        .items6{
+            background-color:rgb(193, 189, 212)
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end:1;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">fourth</div>
+        <div class="items items5">fifth</div>
+        <div class="items items6">sixth</div>
+    </div>
+</body>
+</html>

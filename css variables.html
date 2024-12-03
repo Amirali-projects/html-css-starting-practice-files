@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in css</title>
+    <style>
+        :root{
+            --color:blue;
+            --scolor:rgb(8, 124, 56);
+            --defpadd:30px;
+            --defop:0.4;
+        }
+        #container{
+            background-color:var(--color);
+        }
+        ul{
+            background-color:red;
+            list-style:none;
+            display:flex
+        }
+        ul li{
+            color:aqua;
+            padding:var(--defpadd);/*Global varible is described here */
+            opacity: var(--defop);
+            
+        }
+        ul li:first-child{
+         --scolor:rgb(142, 209, 34);/*local variable so it will override the above variables*/
+        color:var(--scolor);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis aliquam laboriosam, nesciunt suscipit consectetur! Libero praesentium facere magnam assumenda sapiente ut placeat?
+    </p>
+
+
+
+
+    </div>
+    
+</body>
+</html>

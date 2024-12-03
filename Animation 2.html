@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:244px;
+            width:345px;
+            background-color:rgb(17, 207, 74);
+        }
+        .box1{
+            width:34px;
+            height:45px;
+            background-color: maroon;
+            animation:amirkaanimation;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+            animation-fill-mode:both;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            animation-delay: 1s;
+            ,
+            animation:amir2 3s ease-in-out 3s 1;
+        }
+        @keyframes amirkaanimation {
+            from{
+                   transform: translatex(0px);
+            }
+            to{
+                transform: translatex(1000px);
+            }
+            
+        }
+        @keyframes amir {
+            0%{
+                transform:rotate(100deg)
+            }
+            20%{
+                transform:rotate(200deg)
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: :rotate(400deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in  css tutorial</title>
+    <style>
+        .container{
+            height :107px;
+            width:204px;
+            background-color: aqua;
+            display:grid;
+            /* grid-template-columns:56px 84px auto;
+            grid-template-rows:104px 84px; */
+         /* 2fraction means that it will take place of two boxes */
+            /* grid-template-columns: 3fr 1fr; */
+            /* The following means that of three boxes of 100px in one line. */
+            /* grid-template-columns:repeat(3,100px); */
+            /* grid-template-columns:repeat(2,150px) 1fr; */
+            grid-template-columns:repeat(2,150px) 50%;
+            grid-template-rows: 100px 150px;
+            grid-gap:24px;
+            /* By above their is a gap between the boxes */
+        }
+        .items{
+            border:2px solid  black;
+        }
+        .items1{
+            background:red;
+        }
+        .items2{
+            background:rgb(152, 202, 16);
+        }
+        .items3{
+            background:rgb(23, 155, 73);
+        }
+        .items4{
+            background:rgb(212, 160, 160);
+        }
+        .items5{
+            background-color:rgb(114, 10, 175)
+        }
+        .items6{
+            background-color:rgb(39, 13, 155)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">fourth</div>
+        <div class="items items5">fifth</div>
+        <div class="items items6">sixth</div>
+    </div>
+</body>
+</html>

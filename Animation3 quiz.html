@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce animation</title>
+  <style>
+      .container{
+        width:256px;
+        height:267px;
+        background-color: rgb(179, 255, 0);
+    }
+    .box1{
+        width:45px;
+        height:45px;
+        background-color: black;
+        position:absolute;
+        bottom: 58px;
+        border-radius: 86px;
+        animation:Amir1;
+        animation-duration:10s;
+    }
+    @keyframes Amir1{
+        from{
+            transform: translatey(120px);
+        }
+        to{
+            transform: translatex(456px);
+        }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+div{
+    color:rgb(28, 230, 62);
+}
+span,p{
+    background-color:red;
+    color:blueviolet
+}
+a{
+    background-color: aqua;
+}

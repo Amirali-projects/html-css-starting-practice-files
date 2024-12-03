@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about css selectors</title>
+    <style>
+         /* .Amir:first-child{
+            color:rgb(226, 35, 35);
+            background-color:blue; */
+        /* }
+        .Amir:first-child:first-line{
+            color:aqua;
+            background-color: red;
+        } */
+        /* .boxes *{
+            color:blue;
+            border:2px solid black;
+        } */
+        /* .Amir:nth-child(odd){
+            color:#008000;
+        } */
+        .Amir:nth-last-child(2):before{
+            /* color:aqua; */
+            
+        }
+
+        /* div,.boxes[data-color="primary"]{
+            background-color: yellow;
+            margin:8px;
+            padding:45px;
+        } */
+        .boxes::before{
+            content:"what is your name";
+        }
+        .box::after{
+            content:"what  is your name";
+            
+        }
+        ::selection{
+            color:red;
+            background-color:black;
+        }
+        .Amir::first-letter{
+            color:red;
+            font-size:45px;
+        }
+       input::placeholder{
+            color:blue;
+            font-size: 23px;
+            padding:2px;
+            margin-bottom:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="Amir">This is my first box</div>
+        <div data-color="primary" class="Amir">This is my second box</div>
+        <div class="Amir">This is my third box</div>
+        <input type="text" placeholder="Enter your name" username="Amir">
+    </div>
+    
+</body>
+</html>
